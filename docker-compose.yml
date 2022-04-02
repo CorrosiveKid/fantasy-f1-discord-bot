@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  bot:
+    build: .
+    command: poetry run python bot.py
+    volumes:
+      - .:/code
+    restart: always
